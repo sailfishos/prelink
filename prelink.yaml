@@ -1,0 +1,33 @@
+Name: prelink
+Summary: An ELF prelinking utility
+Version: 0.4.2
+Release: 2
+Group: System/Base
+License: GPLv2+
+Sources:
+    - http://people.redhat.com/jakub/prelink/prelink-20100106.tar.bz2
+    - prelink.conf
+    - prelink.cron
+    - prelink.sysconfig
+Description: |
+    The prelink package contains a utility which modifies ELF shared libraries
+    and executables, so that far fewer relocations need to be resolved at runtime
+    and thus programs come up faster.
+
+Requires:
+    - glibc >= 2.2.4-18
+    - coreutils
+    - findutils
+    - util-linux
+    - gawk
+    - grep
+Patches:
+    - prelink-20100106-arm-fix.patch
+PkgBR:
+    - elfutils-libelf-devel-static
+    - glibc-static
+Configure: configure
+ConfigOptions:
+    - --disable-shared
+Builder: make
+Check: yes

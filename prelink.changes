@@ -1,0 +1,29 @@
+* Mon Aug 22 2011 Carsten Munk <carsten@maemo.org> - 0.4.2
+- Add patch for fixing problems on ARM:
+  ld-linux.so is called .so.3 on ARM, not .so.2
+  src/gather.c::gather_deps failed at legit output it asks for
+  same problem in movelibs testcase
+  from ld-linux ('lookup'/'conflict' etc).
+  QEMU workaround for vfork/fork.
+
+* Mon Jun 06 2011 Anas Nashif <anas.nashif@intel.com> - 0.4.2
+- Split documentation
+
+* Fri Jun 25 2010 Yan Yin <yan.yin@intel.com> - 0.4.2
+- Change to YAML format, manually fix %setup and SOURCE numbering in *.spec
+
+* Wed Mar 17 2010 Anas Nashif <anas.nashif@intel.com> - 0.4.2
+- Blacklist libzypp for now
+
+* Mon Feb 01 2010 Yi Yang <yi.y.yang@intel.com> - 0.4.2
+- Update to 0.4.2-4 (20100106)
+
+* Sat Aug 22 2009 Anas Nashif <anas.nashif@intel.com> - 0.4.2
+- Update to 0.4.2
+
+* Wed Dec 10 2008 Arjan van de Ven <arjan@linux.intel.com> 0.4.0
+- Split off an extras package
+
+* Wed Dec 10 2008 Arjan van de Ven <arjan@linux.intel.com> 0.4.0
+- Remove the cronjob; we don't want to do this on mobile systems
+
