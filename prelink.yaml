@@ -1,11 +1,11 @@
 Name: prelink
 Summary: An ELF prelinking utility
-Version: 0.4.2
-Release: 2
+Version: 0.4.6
+Release: 3
 Group: System/Base
 License: GPLv2+
 Sources:
-    - http://people.redhat.com/jakub/prelink/prelink-20100106.tar.bz2
+    - http://people.redhat.com/jakub/prelink/prelink-20111012.tar.bz2
     - prelink.conf
     - prelink.cron
     - prelink.sysconfig
@@ -19,8 +19,8 @@ Requires:
     - coreutils
     - findutils
     - util-linux
-    - gawk
-    - grep
+    - /bin/awk
+    - /bin/grep
 Patches:
     - prelink-20100106-arm-fix.patch
 PkgBR:

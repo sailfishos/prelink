@@ -1,3 +1,8 @@
+* Mon Feb 13 2012 Marko Saukko <marko.saukko@gmail.com> - 0.4.6
+- Fixes MER#135: depend on /bin/awk instead of gawk.
+- Updated to latest version dated 20111012, removed part of 
+  prelink-20100106-arm-fix.patch that was in upstream.
+
 * Mon Aug 22 2011 Carsten Munk <carsten@maemo.org> - 0.4.2
 - Add patch for fixing problems on ARM:
   ld-linux.so is called .so.3 on ARM, not .so.2
