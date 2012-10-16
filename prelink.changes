@@ -1,3 +1,6 @@
+* Tue Oct 16 2012 Marko Saukko <marko.saukko@jollamobile.com> - 0.4.6
+- Added ld-linux-armhf.so.3 to prelink-20100106-arm-fix.patch
+
 * Mon Feb 13 2012 Marko Saukko <marko.saukko@gmail.com> - 0.4.6
 - Fixes MER#135: depend on /bin/awk instead of gawk.
 - Updated to latest version dated 20111012, removed part of 
