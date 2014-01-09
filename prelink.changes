@@ -1,3 +1,7 @@
+* Thu Jan 9 2014 Davide Bettio <davide.bettio@ispirata.com> - 0.4.6
+- Set ld-linux-armhf.so.3 as default dynamic linker for armv7(tn)hl to disable
+  "Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker" warning.
+
 * Tue Oct 16 2012 Marko Saukko <marko.saukko@jollamobile.com> - 0.4.6
 - Added ld-linux-armhf.so.3 to prelink-20100106-arm-fix.patch
 

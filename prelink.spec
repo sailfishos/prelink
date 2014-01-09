@@ -19,6 +19,7 @@ Source2:    prelink.cron
 Source3:    prelink.sysconfig
 Source100:  prelink.yaml
 Patch0:     prelink-20100106-arm-fix.patch
+Patch1:     prelink-ld-linux-armhf.patch
 Requires:   glibc >= 2.2.4-18
 Requires:   coreutils
 Requires:   findutils
@@ -40,6 +41,10 @@ and thus programs come up faster.
 
 # prelink-20100106-arm-fix.patch
 %patch0 -p1
+%ifarch armv7hl armv7tnhl armv7nhl armv7thl 
+# prelink-ld-linux-armhf.patch
+%patch1 -p2
+%endif
 # >> setup
 %docs_package
 # << setup

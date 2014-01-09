@@ -1,0 +1,12 @@
+diff -Naur a/prelink/src/arch-arm.c b/prelink/src/arch-arm.c
+--- a/prelink/src/arch-arm.c	2011-08-26 09:19:32.000000000 +0200
++++ b/prelink/src/arch-arm.c	2014-01-09 15:26:27.793765636 +0100
+@@ -832,7 +832,7 @@
+   .R_COPY = R_ARM_COPY,
+   .R_RELATIVE = R_ARM_RELATIVE,
+   .rtype_class_valid = RTYPE_CLASS_VALID,
+-  .dynamic_linker = "/lib/ld-linux.so.3",
++  .dynamic_linker = "/lib/ld-linux-armhf.so.3",
+   .adjust_dyn = arm_adjust_dyn,
+   .adjust_rel = arm_adjust_rel,
+   .adjust_rela = arm_adjust_rela,
