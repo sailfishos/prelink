@@ -1,3 +1,6 @@
+* Wed Jan 9 2019 Tomi Leppänen <tomi.leppanen@jolla.com> - 0.4.6-4
+- [packaging] Rename prelink-docs to prelink-doc. Contributes to JB#38578
+
 * Thu Jan 9 2014 Davide Bettio <davide.bettio@ispirata.com> - 0.4.6
 - Set ld-linux-armhf.so.3 as default dynamic linker for armv7(tn)hl to disable
   "Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker" warning.
